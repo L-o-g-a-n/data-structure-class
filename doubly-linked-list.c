@@ -293,7 +293,7 @@ int deleteFirst(headNode* h) {
 		else //노드가 2개이상 있을 때
 		{
 			h->first = p->rlink;
-			(p->rlink)->llink = h;
+			(p->rlink)->llink = NULL;
 		}
 		free(p); //동적할당된 메모리를 반납해준다
 	}
